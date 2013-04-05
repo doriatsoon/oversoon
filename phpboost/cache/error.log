@@ -1,0 +1,35 @@
+2010-01-15 18:55:59
+8
+unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Argument is not a string
+faq_interface.class.php
+75
+2010-01-15 18:55:59
+8
+unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Argument is not a string
+faq_interface.class.php
+75
+2010-05-14 15:13:33
+8
+Undefined variable:  news
+news_begin.php
+54
+2010-05-14 15:13:40
+8
+Undefined variable:  news
+news_begin.php
+54
+2010-05-14 15:28:08
+256
+invalid while request<br /><br />(SELECT<br />1 AS id_search,<br />             a.id AS id_content,<br />             a.title AS title,<br />             ( 2 * MATCH(a.title) AGAINST('site') + MATCH(a.contents) AGAINST('site') ) / 3 * 1 AS relevance,  CONCAT(CONCAT(CONCAT('../articles/articles.php?id=',a.id),'&amp;cat='),a.idcat)  AS link<br />            FROM phpboost_articles a<br />            LEFT JOIN phpboost_articles_cats ac ON ac.id = a.idcat<br />            WHERE<br />            <br />a.visible = 1 AND ((ac.aprob = 1 AND ac.auth LIKE '%s:3:"r-1";i:1;%') OR a.idcat = 0)<br />            <br />AND (MATCH(a.title) AGAINST('site') OR MATCH(a.contents) AGAINST('site'))<br />            ORDER BY relevance DESC  LIMIT 0, 10) UNION (SELECT 2 AS id_search,<br />            d.id AS id_content,<br />            d.title AS title,<br />            ( 3 * MATCH(d.title) AGAINST('site') + 2 * MATCH(d.short_contents) AGAINST('site') + MATCH(d.contents) AGAINST('site') ) / 6 * 1 AS relevance,  CONCAT('../download/download.php?id=',d.id)  AS link<br />            FROM phpboost_download d<br />            WHERE ( MATCH(d.title) AGAINST('site') OR MATCH(d.short_contents) AGAINST('site') OR MATCH(d.contents) AGAINST('site') ) AND d.idcat IN (1)  ORDER BY relevance DESC  LIMIT 0, 100) UNION (SELECT 3 AS id_search,<br />            f.id AS id_content,<br />            f.question AS title,<br />            ( 2 * MATCH(f.question) AGAINST('site') + MATCH(f.answer) AGAINST('site') ) / 3 * 1 AS relevance,  CONCAT(CONCAT(CONCAT(CONCAT(CONCAT('../faq/faq.php?id=',f.idcat),'&amp;question='),f.id),'#q'),f.id)  AS link<br />            FROM phpboost_faq f<br />            WHERE ( MATCH(f.question) AGAINST('site') OR MATCH(f.answer) AGAINST('site') ) AND f.idcat IN (1,2)  ORDER BY relevance DESC  LIMIT 0, 100) UNION (SELECT 4 AS `id_search`,<br />                msg.id AS `id_content`,<br />                t.title AS `title`,<br />                MATCH(t.title) AGAINST('site') * 1 AS `relevance`,<br />                 CONCAT(CONCAT(CONCAT(CONCAT('..','/forum/topic.php?id='),t.id),'#m'),msg.id)   AS `link`<br />            FROM phpboost_forum_msg msg<br />            JOIN phpboost_forum_topics t ON t.id = msg.idtopic<br />            JOIN phpboost_forum_cats c ON c.level != 0 AND c.aprob = 1 AND c.id = t.idcat<br />            WHERE MATCH(t.title) AGAINST('site')<br />             <br />            GROUP BY t.id<br />            ORDER BY relevance DESC LIMIT 0, 50) UNION (SELECT 5 AS id_search,<br />            f.id AS id_content,<br />            f.name AS title,<br />            ( 2 * MATCH(f.name) AGAINST('site') + MATCH(f.contents) AGAINST('site') ) / 3 * 1 AS relevance,  CONCAT(CONCAT(CONCAT('../media/media.php?id=',f.id),'&amp;cat='),f.idcat)  AS link<br />            FROM phpboost_media f<br />            WHERE ( MATCH(f.name) AGAINST('site') OR MATCH(f.contents) AGAINST('site') ) AND f.idcat IN (1,2)  ORDER BY relevance DESC  LIMIT 0, 100) UNION (SELECT 6 AS id_search,<br />            n.id AS id_content,<br />            n.title AS title,<br />            ( 2 * MATCH(n.title) AGAINST('site') + (MATCH(n.contents) AGAINST('site') + MATCH(n.extend_contents) AGAINST('site')) / 2 ) / 3 * 1 AS relevance,  CONCAT('../news/news.php?id=',n.id)  AS link<br />            FROM phpboost_news n<br />            WHERE ( MATCH(n.title) AGAINST('site') OR MATCH(n.contents) AGAINST('site') OR MATCH(n.extend_contents) AGAINST('site') )<br />                AND visible = 1 AND ('1273843688' > start AND ( end = 0 OR '1273843688' < end ) )<br />            ORDER BY relevance DESC  LIMIT 0, 100) UNION (SELECT 8 AS `id_search`,<br />                `id` AS `id_content`,<br />                `title` AS `title`,<br />                ((MATCH(title) AGAINST('site') )* 1) AS `relevance`,<br />                CONCAT('../wiki/wiki.php?title=',encoded_title) AS `link`<br />                FROM phpboost_wiki_articles<br />                WHERE MATCH(title) AGAINST('site'))<br /><br />Illegal mix of collations for operation 'UNION'
+search.class.php
+337
+2012-03-09 10:40:42
+8
+unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Argument is not a string
+faq_interface.class.php
+75
+2012-03-09 10:40:42
+8
+unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Argument is not a string
+faq_interface.class.php
+75
