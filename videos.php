@@ -159,58 +159,26 @@ if (isset($_SESSION['id'])) {
 
 
 
-            <?php if (isset($_SESSION['login'])) { ?>
+            <?php if (isset($_SESSION['login']) && $_SESSION['role'] == "administrateur") { ?>
                 <div id="menuDroite">
                     <div class="title">Espace membre</div>
                     <hr style="margin-left:15px;margin-right:10px;" size="1" />
                     <div class="contentDroite">
-
-                        <?php if ($_SESSION['role'] == "administrateur") { ?>
-                            <!-- Cas ou l'utilisateur est admin-->
-                            <table style="width:100%;">
-                                <tr>
-                                    <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
-                                    <td style="text-align:left;width:90%;"><?php
-                                        echo $_SESSION['prenom'];
-                                        echo " (" . $_SESSION['role'] . ")"
-                                        ?></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="admin/index.php"><img src="images/icons/cc-yast_sysadmin-32x32.gif" alt="home"/></a><a href="action/deconnexionVideoAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
-                                </tr>
-                            </table>
-                        <?php } else { ?>
-                            <table style="width:100%;">
-                                <tr>
-                                    <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
-                                    <td style="text-align:left;width:90%;"><?php
-                                        echo $_SESSION['prenom'];
-                                        echo " (" . $_SESSION['role'] . ")"
-                                        ?></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="modifierProfil.php?id=<?php echo $idMembre; ?>" style="text-decoration:none;color:#003322;"><img src="images/icons/kate-32x32.png" title="Modifier son profil" alt="Modifier son profil"/></a><a href="action/deconnexionVideoAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
-                                </tr>
-                            </table>                    
-                        <?php } ?>
+                        <!-- Cas ou l'utilisateur est admin-->
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
+                                <td style="text-align:left;width:90%;"><?php
+                                    echo $_SESSION['prenom'];
+                                    echo " (" . $_SESSION['role'] . ")"
+                                    ?></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="admin/index.php"><img src="images/icons/cc-yast_sysadmin-32x32.gif" alt="home"/></a><a href="action/deconnexionVideoAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            <?php } ?> 
-            <?php if (isset($_SESSION['login'])) { ?>
-                <div class="title">Information</div>
-                <hr style="margin-left:15px;margin-right:10px;" size="1"/>
-                <div class="contentDroite">                   
-                    <table style="width:100%;">
-                        <tr>
-                            <td style="text-align:justify;width:70%;padding-left:15px;padding-right:10px;" colspan="2">
-                                <p>Consultez la fiche de chaque film en cliquant sur <img src="images/icons/ti-edit-paste-20x20.png"/>.</p>
-                            </td>
-                        </tr>                        
-                        <tr>
-                            <td style="text-align:left;width:30%;padding-left:15px;" colspan="2"><?php echo $messageUser; ?></td>
-                        </tr>
-                    </table>
-                </div>  
             <?php } ?>                
         </div>
         </div>
