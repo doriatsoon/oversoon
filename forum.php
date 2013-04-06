@@ -42,10 +42,8 @@ if (isset($_SESSION['id'])) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>Oversoon.fr</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery-easing.js"></script>
-        <script type="text/javascript" src="javascript/script.js"></script>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <?php include 'cssFile.php'; ?>
+        <?php include 'javascriptFile.php'; ?>
     </head>
 
     <body>

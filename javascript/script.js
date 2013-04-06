@@ -67,13 +67,13 @@ popin = {
     }
 }
 
-
+// Permet de changer la couleur des lignes du listing films
 function changeColor(ligne) {
     ligne.style.backgroundColor = '#FFE9D2';
 }
 
 function colorDefault(ligne, etat) {
-    if (etat == 'pair') {
+    if (etat === 'pair') {
         ligne.style.background = '#D2D2FF';
     } else {
         ligne.style.background = 'transparent';

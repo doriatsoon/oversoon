@@ -17,6 +17,11 @@
     <?php if (!isset($_SESSION['login'])) { ?>
         <a id="connect_in_menu">Se connecter</a>
     <?php } else { ?>
+        
+        <?php if($_SESSION['role'] == "administrateur")  { ?>
+        <a href="admin/index.php"><img src="images/icons/cc-yast_sysadmin-32x32.gif" alt="home" width="22px" height="22px"/></a>
+        <?php } ?>
+        
         <a href="action/deconnexionAction.php">Se d&eacute;connecter</a>
     <?php } ?>
 

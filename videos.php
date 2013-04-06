@@ -68,10 +68,8 @@ if (isset($_SESSION['id'])) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
         <title>Oversoon.fr</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/jquery-easing.js"></script>
-        <script type="text/javascript" src="javascript/script.js"></script>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <?php include 'cssFile.php'; ?>
+        <?php include 'javascriptFile.php'; ?>
     </head>
 
     <body>
@@ -157,29 +155,6 @@ if (isset($_SESSION['id'])) {
                 </div>
             <?php } ?>
 
-
-
-            <?php if (isset($_SESSION['login']) && $_SESSION['role'] == "administrateur") { ?>
-                <div id="menuDroite">
-                    <div class="title">Espace membre</div>
-                    <hr style="margin-left:15px;margin-right:10px;" size="1" />
-                    <div class="contentDroite">
-                        <!-- Cas ou l'utilisateur est admin-->
-                        <table style="width:100%;">
-                            <tr>
-                                <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
-                                <td style="text-align:left;width:90%;"><?php
-                                    echo $_SESSION['prenom'];
-                                    echo " (" . $_SESSION['role'] . ")"
-                                    ?></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="admin/index.php"><img src="images/icons/cc-yast_sysadmin-32x32.gif" alt="home"/></a><a href="action/deconnexionVideoAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            <?php } ?>                
         </div>
         </div>
         <?php include 'footer.php'; ?>
