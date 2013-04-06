@@ -2,7 +2,6 @@
     <ul>
         <li><a href="index.php" >Accueil</a></li>
         <li><a href="videos.php">Vid&eacute;oth&egrave;que</a></li>
-        <li><a href="contactezMoi.php">Contactez-moi</a></li>
         <li><a href="forum.php">Forum</a></li>
     </ul>
 
