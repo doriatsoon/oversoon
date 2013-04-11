@@ -61,7 +61,7 @@ border: 1px solid #CCC;
 
 
 /*partie centre de la page*/
-#centre {
+#center {
 	background-color: #FFF;
 	height: 500px;
 	width:100%;
@@ -391,7 +391,7 @@ textarea.form:hover,input.form:focus{
 	font-size: 14px;
 }
 
-#barremenu li a.active {
+#barremenu li a.selected {
 	background-image: url(../images/barre_fond2.jpg);
 	margin: 0px;
 	background-repeat: repeat-x;
@@ -533,7 +533,7 @@ td.nom_forum{
   margin-right:10px;
 }
 
-.centre{
+.center{
   text-align:center;
 }
 
@@ -579,3 +579,7 @@ a:link,a:visited,a:active{color:#2677C9;text-decoration:none;}a:hover{color:#C87
 
 
 
+#loading {
+    background: url(images/load.gif) no-repeat;
+    display:none;
+}

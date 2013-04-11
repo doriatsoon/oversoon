@@ -1,8 +1,8 @@
 <div id="barremenu">
     <ul>
-        <li><a href="index.php" >Accueil</a></li>
-        <li><a href="videos.php">Vid&eacute;oth&egrave;que</a></li>
-        <li><a href="forum.php">Forum</a></li>
+        <li><a href="#accueil"  rel="ajax">Accueil</a></li>
+        <li><a href="#video" rel="ajax">Vid&eacute;oth&egrave;que</a></li>
+        <li><a href="#forum" rel="ajax">Forum</a></li>
     </ul>
 
 

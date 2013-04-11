@@ -1,7 +1,7 @@
 <div id="basPage">                
     <div class="content">
         <p align="center" class="maj">
-            <a href="planSite.php" class="lienPagination">Plan du site</a> | <a href="mentionslegales.php" class="lienPagination">Mentions l&eacute;gales</a> | <a href="contactezMoi.php">Contactez-moi</a>          
+            <a href="planSite.php" class="lienPagination">Plan du site</a> | <a href="mentionslegales.php" class="lienPagination">Mentions l&eacute;gales</a> | <a href="#contact" rel="ajax" >Contactez-moi</a>          
         </p>                
         <p align="center" style="margin-top:20px;">
             <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>

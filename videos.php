@@ -46,6 +46,8 @@ if (!isset($_SESSION['sql'])) {
     }
 }
 
+
+
 if (isset($_SESSION['nbrLink']) && isset($_SESSION['numRow'])) {
     $numRow = $_SESSION['numRow'];
     $nbrLink = $_SESSION['nbrLink'];
@@ -61,102 +63,81 @@ if (isset($_SESSION['pageSelected'])) {
 if (isset($_SESSION['id'])) {
     $idMembre = $_SESSION['id'];
 }
+
 ?>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-        <title>Oversoon.fr</title>
-        <?php include 'cssFile.php'; ?>
-        <?php include 'javascriptFile.php'; ?>
-    </head>
+<!-- Si l'utilisateur est pas connecté -->
+<?php if (!isset($_SESSION['login'])) { ?>
+    <div class="title">Vid&eacute;os</div>
+    <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
 
-    <body>
-        <div id="page">
-            <?php include 'bandeau.php'; ?>
-            <?php include 'menu.php'; ?>
+    <div style="text-align:left;width:20%;margin-left:15px;display:inline;float:left;position:relative;">
+        <img src="images/icons/ti-2dialog-error-80x80.gif" alt="error"/>
+    </div>
+    <div style="text-align:left;width:75%;margin-top:35px;font-weight:bold;color:red;display:inline;float:left;position:relative;">
+        Cet onglet est r&eacute;serv&eacute; aux membres de ce site.
+    </div>
+<?php } else {
+    ?>
+    <div class="title">Vid&eacute;os</div>
+    <hr style="margin-left:15px;margin-right:10px;" size="1" />
+    <div id="contentVideo">
+        <form action="action/rechercheFilmsAction.php" method="post">
+            <?php listeDeroulante(); ?>
+            <input type="submit" value="Chercher" name="chercher"/>
+        </form>
 
-            <!-- Si l'utilisateur est pas connecté -->
-            <?php if (!isset($_SESSION['login'])) { ?>
-                <div id="centre">
-                    <div class="title">Vid&eacute;os</div>
-                    <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
+        <table style="width:96%;border-collapse:collapse;margin-left:15px;margin-top:20px;font-size:11px">
+            <tr>
+                <td style="width:5%;background-color:#2C1E75;color:white;">N&deg;</td>
+                <td style="width:30%;background-color:#2C1E75;color:white;">Titre</td>
+                <td style="width:20%;background-color:#2C1E75;color:white;">Acteur</td>
+                <td style="width:20%;background-color:#2C1E75;color:white;">R&eacute;alisateur</td>
+                <td style="width:5%;background-color:#2C1E75;color:white;">Fiche</td>
+            </tr>
+            <?php
+            $indice = $indiceDebut;
+            if (isset($result)) {
+                while ($donnees_messages = mysql_fetch_assoc($result)) {
+                    $indice = $indice + 1;
+                    if (($indice % 2) == 0) {
+                        ?>
+                        <tr class="pair" onmousemove="javascript:changeColor(this);" onmouseout="colorDefault(this, 'pair')" bgcolor="#D2D2FF">
+                            <td><?php echo $indice; ?></td>
+                            <td><?php echo $donnees_messages['titre']; ?></td>
+                            <td><?php echo $donnees_messages['acteur']; ?></td>
+                            <td><?php echo $donnees_messages['realisateur']; ?></td>
+                            <td><a href="ficheFilm.php?idFilm=<?php echo $donnees_messages['id']; ?>"><img src="images/icons/ti-edit-paste-20x20.gif" alt="edit"/></a></td>
+                        </tr>
 
-                    <div style="text-align:left;width:20%;margin-left:15px;display:inline;float:left;position:relative;">
-                        <img src="images/icons/ti-2dialog-error-80x80.gif" alt="error"/>
-                    </div>
-                    <div style="text-align:left;width:75%;margin-top:35px;font-weight:bold;color:red;display:inline;float:left;position:relative;">
-                        Cet onglet est r&eacute;serv&eacute; aux membres de ce site.
-                    </div>
-                </div>
-            <?php } else {
-                ?>
-
-
-                <div id="centre">
-                    <div class="title">Vid&eacute;os</div>
-                    <hr style="margin-left:15px;margin-right:10px;" size="1" />
-                    <div id="contentVideo">
-                        <form action="action/rechercheFilmsAction.php" method="post">
-                            <?php listeDeroulante(); ?>
-                            <input type="submit" value="Chercher" name="chercher"/>
-                        </form>
-
-                        <table style="width:96%;border-collapse:collapse;margin-left:15px;margin-top:20px;font-size:11px">
-                            <tr>
-                                <td style="width:5%;background-color:#2C1E75;color:white;">N&deg;</td>
-                                <td style="width:30%;background-color:#2C1E75;color:white;">Titre</td>
-                                <td style="width:20%;background-color:#2C1E75;color:white;">Acteur</td>
-                                <td style="width:20%;background-color:#2C1E75;color:white;">R&eacute;alisateur</td>
-                                <td style="width:5%;background-color:#2C1E75;color:white;">Fiche</td>
-                            </tr>
-                            <?php
-                            $indice = $indiceDebut;
-                            if (isset($result)) {
-                                while ($donnees_messages = mysql_fetch_assoc($result)) {
-                                    $indice = $indice + 1;
-                                    if (($indice % 2) == 0) {
-                                        ?>
-                                        <tr class="pair" onmousemove="javascript:changeColor(this);" onmouseout="colorDefault(this, 'pair')" bgcolor="#D2D2FF">
-                                            <td><?php echo $indice; ?></td>
-                                            <td><?php echo $donnees_messages['titre']; ?></td>
-                                            <td><?php echo $donnees_messages['acteur']; ?></td>
-                                            <td><?php echo $donnees_messages['realisateur']; ?></td>
-                                            <td><a href="ficheFilm.php?idFilm=<?php echo $donnees_messages['id']; ?>"><img src="images/icons/ti-edit-paste-20x20.gif" alt="edit"/></a></td>
-                                        </tr>
-
-                                    <?php } else { ?>
-                                        <tr class="impair" onmousemove="changeColor(this)" onmouseout="colorDefault(this, 'impair')">
-                                            <td><?php echo $indice; ?></td>
-                                            <td><?php echo $donnees_messages['titre'] ?></td>
-                                            <td><?php echo $donnees_messages['acteur'] ?></td>
-                                            <td><?php echo $donnees_messages['realisateur'] ?></td>
-                                            <td><a href="ficheFilm.php?idFilm=<?php echo $donnees_messages['id']; ?>"><img src="images/icons/ti-edit-paste-20x20.gif" alt="edit"/></a></td>
-                                        </tr>
-                                        <?php
-                                    }
-                                }
-                            }
-                            ?>   
-                        </table>
+                    <?php } else { ?>
+                        <tr class="impair" onmousemove="changeColor(this)" onmouseout="colorDefault(this, 'impair')">
+                            <td><?php echo $indice; ?></td>
+                            <td><?php echo $donnees_messages['titre'] ?></td>
+                            <td><?php echo $donnees_messages['acteur'] ?></td>
+                            <td><?php echo $donnees_messages['realisateur'] ?></td>
+                            <td><a href="ficheFilm.php?idFilm=<?php echo $donnees_messages['id']; ?>"><img src="images/icons/ti-edit-paste-20x20.gif" alt="edit"/></a></td>
+                        </tr>
                         <?php
-                        if (isset($numRow) && ($numRow > 10)) {
-                            for ($k = 1; $k <= $nbrLink; $k++) {
-                                if ($k == $pageSelected) {
-                                    echo "[<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a>] ";
-                                } else {
-                                    echo "<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a> ";
-                                }
-                            }
-                        }
-                        ?>                    
-                    </div>
-                </div>
-            <?php } ?>
+                    }
+                }
+            }
+            ?>   
+        </table>
+        <?php
+        if (isset($numRow) && ($numRow > 10)) {
+            for ($k = 1; $k <= $nbrLink; $k++) {
+                if ($k == $pageSelected) {
+                    echo "[<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a>] ";
+                } else {
+                    echo "<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a> ";
+                }
+            }
+        }
+        ?>                    
+    </div>
+<?php }
 
-        </div>
-        </div>
-        <?php include 'footer.php'; ?>
-    </body>
-</html>
+deconnexion();
+
+?>
