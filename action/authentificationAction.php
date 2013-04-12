@@ -7,6 +7,8 @@ include '../connexion/bdd.php';
 //on se connecte à la base de données
 connexion();
 
+$fromPage = $_GET['page'];
+
 //on récupère les variables du formulaire
 $login = $_POST['login'];
 $password = $_POST['pass'];
@@ -75,10 +77,10 @@ if($row['pass'] == $password){
         $_SESSION['role'] = $row['role'];
         $_SESSION['id'] = $row['id'];
     }
-    header('location:../index.php');
+    header('location:../index.php?page=#'.$fromPage);
 }else{
     $_SESSION['messageUser'] = "<p style=\"color:red;font-weight:bold;font-size:12px;\">Erreur de mot de passe.</p>";
-    header('location:../index.php');
+    header('location:../index.php?page=#'.$fromPage);
 }
 
 ?>
