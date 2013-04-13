@@ -70,13 +70,7 @@ if (isset($_SESSION['id'])) {
 <?php if (!isset($_SESSION['login'])) { ?>
     <div class="title">Vid&eacute;os</div>
     <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
-
-    <div style="text-align:left;width:20%;margin-left:15px;display:inline;float:left;position:relative;">
-        <img src="images/icons/ti-2dialog-error-80x80.gif" alt="error"/>
-    </div>
-    <div style="text-align:left;width:75%;margin-top:35px;font-weight:bold;color:red;display:inline;float:left;position:relative;">
-        Cet onglet est r&eacute;serv&eacute; aux membres de ce site.
-    </div>
+    <?php include './forbiddenAcces.php';?>
 <?php } else {
     ?>
     <div class="title">Vid&eacute;os</div>
@@ -137,7 +131,5 @@ if (isset($_SESSION['id'])) {
         ?>                    
     </div>
 <?php }
-
 deconnexion();
-
 ?>

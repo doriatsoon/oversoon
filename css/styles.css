@@ -68,6 +68,9 @@ border: 1px solid #CCC;
 	float: left;
 }
 
+#center #center_not_connected { text-align: center;}
+#center #center_not_connected_message {font-weight:bold;color:red;}
+
 #centreForum {
 	background-color: #FFF;
 	height: 1500px;

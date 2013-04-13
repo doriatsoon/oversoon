@@ -20,48 +20,27 @@ LEFT JOIN forum_topic ON forum_topic.topic_id = forum_post.topic_id
 LEFT JOIN forum_membres ON forum_membres.membre_id = forum_post.post_createur
 WHERE auth_view < ' . $level . ' 
 ORDER BY cat_ordre, forum_ordre DESC') or die('SQL Error');
-
-
-//requete du nombre de sujet
-//requete pour qui est en ligne?
-$requete3 = mysql_query("SELECT membre_id FROM forum_membres");
-$TotalDesMembres = mysql_num_rows($requete3);
-
-$requete4 = mysql_query("SELECT membre_pseudo, membre_id FROM forum_membres ORDER BY membre_id DESC LIMIT 0, 1");
-$data4 = mysql_fetch_assoc($requete4);
-$derniermembre = stripslashes(htmlspecialchars($data4['membre_pseudo']));
-
-//récupération de l'id du membre
-if (isset($_SESSION['id'])) {
-    $idMembre = $_SESSION['id'];
-}
 ?>
 
 <!-- Si l'utilisateur est pas connect+� -->
 <?php if (!isset($_SESSION['login'])) { ?>
     <div class="title">Forum</div>
     <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
-    <div style="text-align:left;width:20%;margin-left:15px;display:inline;float:left;position:relative;">
-        <img src="images/icons/ti-2dialog-error-80x80.gif"/>
-    </div>
-    <div style="text-align:left;width:75%;margin-top:35px;font-weight:bold;color:red;display:inline;float:left;position:relative;">
-        Cet onglet est r&eacute;serv&eacute; aux membres de ce site. 
-    </div>
-    <?php
-} else {
+    <?php include './forbiddenAcces.php';?>
+<?php } else {
     ?>
 
     <div class="title">Forum</div>
     <hr style="margin-left:15px;margin-right:10px;" size="1"/>
     <div id="content">
         <div id="corps_forum">
-            <?php
-            //Dans un premier temps, on v�rifie s'il y a des forums � lister
-            if (mysql_num_rows($requete2) < 1) {
-                echo'Il n y a pas de forum :o 
+    <?php
+    //Dans un premier temps, on v�rifie s'il y a des forums � lister
+    if (mysql_num_rows($requete2) < 1) {
+        echo'Il n y a pas de forum :o 
                             Allez en ajouter avec le panneau d administration';
-            } else {
-                ?>
+    } else {
+        ?>
                 <table style="border-collapse:collapse;" class="liste_cat">
                     <thead>
                         <tr style="background-image:url(images/bg_forum_cat.png);background-repeat:repeat-x;height:30px;color:#FFFFFF;">
@@ -73,31 +52,31 @@ if (isset($_SESSION['id'])) {
                         </tr>
                     </thead>
 
-                    <?php
-                    //D�but de la boucle
-                    while ($data2 = mysql_fetch_assoc($requete2)) {
-                        //On affiche chaque cat�gorie
-                        if ($categorie != $data2['cat_id']) {
-                            //Si c'est une nouvelle cat�gorie on l'affiche
+        <?php
+        //D�but de la boucle
+        while ($data2 = mysql_fetch_assoc($requete2)) {
+            //On affiche chaque cat�gorie
+            if ($categorie != $data2['cat_id']) {
+                //Si c'est une nouvelle cat�gorie on l'affiche
 
-                            $categorie = $data2['cat_id'];
-                            ?>
+                $categorie = $data2['cat_id'];
+                ?>
                             <tr style="background-image:url(images/bg_grosse_cat.png);background-repeat:repeat-x;height:30px;color:#FFFFFF;">
                                 <th></th>
                                 <th class="titre" style="color:#1877D5;font-size:1.1em;">
                                     <strong>
-                                        <?php echo stripslashes(htmlspecialchars($data2['cat_nom'])); ?>
+                <?php echo stripslashes(htmlspecialchars($data2['cat_nom'])); ?>
                                     </strong>
                                 </th>             
                                 <th class="centre_cat"><strong>Sujets</strong></th>       
                                 <th class="centre_cat"><strong>Messages</strong></th>       
                                 <th class="centre_cat"><strong></strong></th>   
                             </tr>
-                            <?php
-                        }
+                <?php
+            }
 
-                        //Ici, on met le contenu de chaque cat�gorie
-                        ?>
+            //Ici, on met le contenu de chaque cat�gorie
+            ?>
 
                         <?php
                         // Ce super echo de la mort affiche tous
@@ -138,64 +117,8 @@ if (isset($_SESSION['id'])) {
 
         </div>
     </div> 
-    </div>
 
-<?php } ?>
-
-
-<?php if (isset($_SESSION['login']) && $_SESSION['role'] == "administrateur") { ?>
-    <div id="menuDroite">
-        <div class="title">Espace membre</div>
-        <hr style="margin-left:15px;margin-right:10px;" size="1"/>
-        <div class="contentDroite">
-
-            <?php if ($_SESSION['role'] == "administrateur") { ?>
-                <!-- Cas ou l'utilisateur est admin-->
-                <table style="width:100%;">
-                    <tr>
-                        <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
-                        <td style="text-align:left;width:90%;"><?php echo $_SESSION['prenom'];
-        echo " (" . $_SESSION['role'] . ")"
-                ?></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="admin/index.php"><img src="images/icons/cc-yast_sysadmin-32x32.gif" alt="admin"/></a><a href="action/deconnexionAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
-                    </tr>
-                </table>
-    <?php } else { ?>
-                <!-- Cas ou l'utilisateur est utilisateur-->
-                <table style="width:100%;">
-                    <tr>
-                        <td style="padding-left:15px;"><img src="images/icons/cc-kuser-32x32.gif" alt="user"/></td>
-                        <td style="text-align:left;width:90%;"><?php echo $_SESSION['prenom'];
-        echo " (" . $_SESSION['role'] . ")"
-        ?></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:left;width:50%;padding-left:10px;" colspan="2"><a href="modifierProfil.php?id=<?php echo $idMembre; ?>" style="text-decoration:none;color:#003322;"><img src="images/icons/kate-32x32.png" title="Modifier son profil" alt="Modifier son profil"/></a><a href="action/deconnexionForumAction.php" style="text-decoration:none;color:#003322;"><img src="images/icons/ti-system-log-out-32x32.gif" title="Se d&eacute;connecter" alt="Se d&eacute;connecter"/></a></td>
-                    </tr>
-                </table>
-
-    <?php }
-    ?>
-        </div>
-        <div class="title">Qui est en ligne?</div>
-        <hr style="margin-left:15px;margin-right:10px;" size="1" />
-        <div class="contentDroite">
-            <table style="width:100%;">
-                <tr>
-                    <td style="text-align:left;width:30%;padding-left:15px;" colspan="2"><?php echo 'Le total des messages du forum est <strong>' . $totaldesmessages . '</strong>' ?></td>
-                </tr>
-                <tr>
-                    <td style="text-align:left;width:30%;padding-left:15px;" colspan="2"><?php echo 'Le site et le forum comptent <strong>' . $TotalDesMembres . '</strong> membres' ?></td>
-                </tr>
-                <tr>
-                    <td style="text-align:left;width:30%;padding-left:15px;" colspan="2"><?php echo 'Le dernier membre est <a href="./voirprofil.php?m=' . $data4['membre_id'] . '&amp;action=consulter">' . $derniermembre . '</a>' ?></td>
-                </tr>
-                <tr>
-                    <td style="text-align:left;width:30%;padding-left:15px;" colspan="2"><?php echo $messageUser; ?></td>
-                </tr>                     
-            </table>
-        </div>
-    </div>     
-<?php } ?>
+<?php
+}
+deconnexion();
+?>
