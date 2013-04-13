@@ -20,10 +20,8 @@ session_name('admin');
         <div id="page">
             <?php include 'bandeau.php'; ?>
             <?php include 'menu.php'; ?>
-            <div class="loading"></div>
-            <div id="center">
-            </div>
+            <?php include 'center.php'; ?>
+            <?php include 'footer.php'; ?>
         </div>
-        <?php include 'footer.php'; ?>
     </body>
 </html>
