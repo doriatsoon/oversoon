@@ -7,7 +7,7 @@
 
 
     <?php if (isset($_SESSION['login'])) { ?>
-        <a href="modifierProfil.php?id=<?php echo $idMembre; ?>"><?php
+        <a href="#updateprofile&id=<?php echo $_SESSION['id']; ?>" rel="ajax"><?php
             echo $_SESSION['prenom'];
             echo " (" . $_SESSION['role'] . ")"
             ?></a>

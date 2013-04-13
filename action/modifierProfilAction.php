@@ -24,6 +24,5 @@ $query = mysql_query($sqlUpdateForum) or die ("Mise a jour impossible");
 deconnexion();
 $_SESSION['messageUser'] = "<p style=\"color:green;font-weight:bold;font-size:12px;\">Votre modification a bien &eacute;t&eacute;e prise en compte.</p>";
 
-header('location:../modifierProfil.php?id='.$id);
-
+header('location:../index.php?page=#updateprofile&id='.$id);
 ?>

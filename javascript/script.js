@@ -3,77 +3,84 @@ $(document).ready(function() {
     popin.init();
 });
 
+
 function pageload(hash) {
     //if hash value exists, run the ajax
-    if (hash) getPage();    
+    if (hash) {
+        getPage();
+    }
 }
-        
+
 function getPage() {
-    
     //generate the parameter for the php script
     var data = 'page=' + document.location.hash.replace(/^.*#/, '');
     $.ajax({
-        url: "loader.php",    
+        url: "loader.php",
         type: "GET",
-        data: data,        
+        data: data,
         cache: false,
-        success: function (file) {    
+        success: function(file) {
             $.ajax({
-                url: file,    
-                type: "GET",        
+                url: file,
+                type: "GET",
                 cache: false,
-                success: function (html) {    
-
+                success: function(html) {
+                    popin.close();
                     //hide the progress bar
-                    $('#loading').hide();    
+                    $('#loading').hide();
 
                     //add the content retrieved from ajax and put it in the #content div
                     $('#center').html(html);
 
                     //display the body with fadeIn transition
-                    $('#center').fadeIn('slow');        
-                }        
+                    $('#center').fadeIn('slow');
+                }
             });
-        }        
+        }
     });
 }
 
 page = {
-     init: function() {
-         //Check if url hash value exists (for bookmark)
-    $.history.init(pageload);    
-        
-    //highlight the selected link
-    $('a[href=' + document.location.hash + ']').addClass('selected');
-    
-    //Seearch for link with REL set to ajax
-    $('a[rel=ajax]').click(function () {
-        
-        //grab the full url
-        var hash = this.href;
-        
-        //remove the # value
-        hash = hash.replace(/^.*#/, '');
-        
-        //for back button
-         $.history.load(hash);    
-         
-         //clear the selected class and add the class class to the selected link
-         $('a[rel=ajax]').removeClass('selected');
-         $(this).addClass('selected');
-         
-         //hide the content and show the progress bar
-         $('#center').hide();
-         $('#loading').show();
-         
-         //run the ajax
-        getPage();
-    
-        //cancel the anchor tag behaviour
-        return false;
-    });    
-     }
-    
+    init: function() {
+        //Check if url hash value exists (for bookmark)
+        $.history.init(pageload);
+
+        //highlight the selected link
+        $('a[href=' + document.location.hash + ']').addClass('selected');
+
+        //Seearch for link with REL set to ajax
+        $('a[rel=ajax]').click(function() {
+
+            //grab the full url
+            var hash = this.href;
+
+            //remove the # value
+            hash = hash.replace(/^.*#/, '');
+
+            //for back button
+            $.history.load(hash);
+
+            //clear the selected class and add the class class to the selected link
+            $('a[rel=ajax]').removeClass('selected');
+            $(this).addClass('selected');
+
+            $("#popin").fadeOut(500, function() {
+                $("#popin").remove();
+            })
+
+            //hide the content and show the progress bar
+            $('#center').hide();
+            $('#loading').show();
+
+            //run the ajax
+            page.getPage();
+
+
+            //cancel the anchor tag behaviour
+            return false;
+        });
+    }
+
 }
 
 popin = {
@@ -93,7 +100,7 @@ popin = {
         $(window).resize(popin.redim);
     },
     open: function() {
-        $("body").append("<div id=\"popin\"><div id=\"popin_aplat\"></div><div id=\"popin_loader\"></div><div id=\"popin_conteneur\"><div id=\"popin_relative\"><div id=\"popin_close\"></div><div id=\"popin_contenu\"><form action=\"action/authentificationAction.php?page="+document.location.hash.replace('#', '')+"\" method=\"post\"><table id=\"table_connect\" style=\"width:450px;padding:90px;\"><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Login:</td><td style=\"text-align:left;width:70%;\"><input type=\"text\" name=\"login\"/></td></tr><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Pass:</td><td style=\"text-align:left;width:70%;\"><input type=\"password\" name=\"pass\"/></td></tr><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Connexion:</td><td style=\"text-align:left;width:50%;\"><input type=\"submit\" value=\"Me connecter\"/></td></tr><tr><td style=\"text-align:left;width:50%;\"><a href=\"inscription.php\" style=\"text-decoration:none;color:#003322;\">Inscription</a></td><td><a href=\"passwordforget.php\" style=\"text-decoration:none;color:#003322;\">Mot de passe oubli&eacute;</a></td></tr></table></form></div></div></div></div>");
+        $("body").append("<div id=\"popin\"><div id=\"popin_aplat\"></div><div id=\"popin_loader\"></div><div id=\"popin_conteneur\"><div id=\"popin_relative\"><div id=\"popin_close\"></div><div id=\"popin_contenu\"><form action=\"action/authentificationAction.php?page=" + document.location.hash.replace('#', '') + "\" method=\"post\"><table id=\"table_connect\" style=\"width:450px;padding:90px;\"><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Login:</td><td style=\"text-align:left;width:70%;\"><input type=\"text\" name=\"login\"/></td></tr><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Pass:</td><td style=\"text-align:left;width:70%;\"><input type=\"password\" name=\"pass\"/></td></tr><tr><td style=\"text-align:left;width:30%;padding-left:15px;\">Connexion:</td><td style=\"text-align:left;width:50%;\"><input type=\"submit\" value=\"Me connecter\"/></td></tr><tr><td style=\"text-align:left;width:50%;\"><a href=\"#inscription\" rel=\"ajax\" style=\"text-decoration:none;color:#003322;\">Inscription</a></td><td><a href=\"#mdpforget\" rel=\"ajax\" style=\"text-decoration:none;color:#003322;\">Mot de passe oubli&eacute;</a></td></tr></table></form></div></div></div></div>");
         $("#popin_conteneur").hide();
         $("#popin_loader").hide().fadeIn();
         $("#popin_aplat").css('opacity', 0).fadeTo(500, popin.opacite);
@@ -123,7 +130,6 @@ popin = {
         $("#popin").fadeOut(500, function() {
             $("#popin").remove();
         })
-
     },
     windowH: function() {
         if (window.innerHeight)
