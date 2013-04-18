@@ -29,7 +29,6 @@ if($acteur != "Acteur" || $lettre != "Lettre" || $categorie != "Categorie" || $r
 }
 
 if($acteur != "Acteur"){
-
     $requete = "acteur = \"$acteur\"";
 }else{
     $requete = "";
@@ -38,7 +37,6 @@ if($acteur != "Acteur"){
 if($lettre != "Lettre"){
     if($requete != ""){
         $requete = $requete." and titre like  '$lettre%'";
-
     }else{
         $requete = "titre like '$lettre%'";
     }
@@ -86,6 +84,6 @@ $_SESSION['numRow'] = $numLigne;
 $_SESSION['indiceDebut'] = $indiceDebut;
 
 
-header('location:../videos.php');
+header('location:../index.php#video');
 
 ?>

@@ -24,6 +24,8 @@ switch ($_GET['page']) {
         break;
     case 'plansite' : $page = 'planSite.php';
         break;
+    case 'fichefilm' : $page = 'ficheFilm.php?idFilm='.$_GET['idFilm'];
+        break;
     default : $page = 'accueil.php';
         break;
 }

@@ -6,7 +6,7 @@ session_name('admin');
 
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 
     <head>
         <meta charset="utf-8">

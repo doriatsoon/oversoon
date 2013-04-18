@@ -30,6 +30,7 @@ function getPage() {
                     $('#loading').hide();
 
                     //add the content retrieved from ajax and put it in the #content div
+                    $('#center').hide();
                     $('#center').html(html);
 
                     //display the body with fadeIn transition
@@ -154,7 +155,7 @@ function changeColor(ligne) {
 
 function colorDefault(ligne, etat) {
     if (etat === 'pair') {
-        ligne.style.background = '#FCFCFC';
+        ligne.style.background = '#E6E9ED';
     } else {
         ligne.style.background = 'transparent';
     }
