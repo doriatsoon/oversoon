@@ -20,13 +20,16 @@ LEFT JOIN forum_topic ON forum_topic.topic_id = forum_post.topic_id
 LEFT JOIN forum_membres ON forum_membres.membre_id = forum_post.post_createur
 WHERE auth_view < ' . $level . ' 
 ORDER BY cat_ordre, forum_ordre DESC') or die('SQL Error');
+
+$categorie = "";
+$totaldesmessages  = "";
 ?>
 
 <!-- Si l'utilisateur est pas connect+� -->
 <?php if (!isset($_SESSION['login'])) { ?>
     <div class="title">Forum</div>
     <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
-    <?php include './forbiddenAcces.php';?>
+    <?php include './forbiddenAcces.php'; ?>
 <?php } else {
     ?>
 
@@ -34,13 +37,13 @@ ORDER BY cat_ordre, forum_ordre DESC') or die('SQL Error');
     <hr style="margin-left:15px;margin-right:10px;" size="1"/>
     <div id="content">
         <div id="corps_forum">
-    <?php
-    //Dans un premier temps, on v�rifie s'il y a des forums � lister
-    if (mysql_num_rows($requete2) < 1) {
-        echo'Il n y a pas de forum :o 
+            <?php
+            //Dans un premier temps, on v�rifie s'il y a des forums � lister
+            if (mysql_num_rows($requete2) < 1) {
+                echo'Il n y a pas de forum :o 
                             Allez en ajouter avec le panneau d administration';
-    } else {
-        ?>
+            } else {
+                ?>
                 <table style="border-collapse:collapse;" class="liste_cat">
                     <thead>
                         <tr style="background-image:url(images/bg_forum_cat.png);background-repeat:repeat-x;height:30px;color:#FFFFFF;">
@@ -52,31 +55,31 @@ ORDER BY cat_ordre, forum_ordre DESC') or die('SQL Error');
                         </tr>
                     </thead>
 
-        <?php
-        //D�but de la boucle
-        while ($data2 = mysql_fetch_assoc($requete2)) {
-            //On affiche chaque cat�gorie
-            if ($categorie != $data2['cat_id']) {
-                //Si c'est une nouvelle cat�gorie on l'affiche
+                    <?php
+                    //D�but de la boucle
+                    while ($data2 = mysql_fetch_assoc($requete2)) {
+                        //On affiche chaque cat�gorie
+                        if ($categorie != $data2['cat_id']) {
+                            //Si c'est une nouvelle cat�gorie on l'affiche
 
-                $categorie = $data2['cat_id'];
-                ?>
+                            $categorie = $data2['cat_id'];
+                            ?>
                             <tr style="background-image:url(images/bg_grosse_cat.png);background-repeat:repeat-x;height:30px;color:#FFFFFF;">
                                 <th></th>
                                 <th class="titre" style="color:#1877D5;font-size:1.1em;">
                                     <strong>
-                <?php echo stripslashes(htmlspecialchars($data2['cat_nom'])); ?>
+                                        <?php echo stripslashes(htmlspecialchars($data2['cat_nom'])); ?>
                                     </strong>
                                 </th>             
                                 <th class="centre_cat"><strong>Sujets</strong></th>       
                                 <th class="centre_cat"><strong>Messages</strong></th>       
                                 <th class="centre_cat"><strong></strong></th>   
                             </tr>
-                <?php
-            }
+                            <?php
+                        }
 
-            //Ici, on met le contenu de chaque cat�gorie
-            ?>
+                        //Ici, on met le contenu de chaque cat�gorie
+                        ?>
 
                         <?php
                         // Ce super echo de la mort affiche tous
@@ -118,7 +121,7 @@ ORDER BY cat_ordre, forum_ordre DESC') or die('SQL Error');
         </div>
     </div> 
 
-<?php
+    <?php
 }
 deconnexion();
 ?>

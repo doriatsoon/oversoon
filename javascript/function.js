@@ -1,6 +1,6 @@
 function confirmeFormulaire(){
     
-    if(confirm('Etes-vous sur de vouloir enregistrer ce formulaire?')==true){
+    if(confirm('Etes-vous sur de vouloir enregistrer ce formulaire?')===true){
         if(verificationFormulaire()){
 
             return true;
@@ -16,7 +16,7 @@ function confirmeFormulaire(){
 
 function confirmeFormulairePassword(){
     
-    if(confirm('Etes-vous sur de vouloir remplacer votre mot de passe?')==true){
+    if(confirm('Etes-vous sur de vouloir remplacer votre mot de passe?')===true){
         if(verificationFormulairePassword()){
 
             return true;
@@ -208,22 +208,4 @@ function verificationFormulaire(){
     if(compteur>0){
         return true;
     }
-}
-
-
-function changeColor(ligne){
-	ligne.style.backgroundColor='#FFE9D2';
-}
-
-function colorDefault(ligne,etat){
-	if(etat == 'pair'){
-		ligne.style.background='#D2D2FF';
-	}else{
-		ligne.style.background='transparent';		
-	}
-}
-
-//loading
-function loading(){
-    document.getElementById('loading').style.display = true;
 }

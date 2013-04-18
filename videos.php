@@ -46,8 +46,6 @@ if (!isset($_SESSION['sql'])) {
     }
 }
 
-
-
 if (isset($_SESSION['nbrLink']) && isset($_SESSION['numRow'])) {
     $numRow = $_SESSION['numRow'];
     $nbrLink = $_SESSION['nbrLink'];
@@ -59,11 +57,6 @@ if (isset($_SESSION['pageSelected'])) {
     $pageSelected = 1;
 }
 
-//récupération de l'id du membre
-if (isset($_SESSION['id'])) {
-    $idMembre = $_SESSION['id'];
-}
-
 ?>
 
 <!-- Si l'utilisateur est pas connecté -->
@@ -73,15 +66,16 @@ if (isset($_SESSION['id'])) {
     <?php include './forbiddenAcces.php';?>
 <?php } else {
     ?>
-    <div class="title">Vid&eacute;os</div>
+    <div class="title">Vidéos</div>
     <hr style="margin-left:15px;margin-right:10px;" size="1" />
     <div id="contentVideo">
+        
         <form action="action/rechercheFilmsAction.php" method="post">
             <?php listeDeroulante(); ?>
             <input type="submit" value="Chercher" name="chercher"/>
         </form>
 
-        <table style="width:96%;border-collapse:collapse;margin-left:15px;margin-top:20px;font-size:11px">
+        <table style="width:96%;border-collapse:collapse;margin-left:15px;margin-top:20px;font-size:14px">
             <tr>
                 <td style="width:5%;background-color:#2C1E75;color:white;">N&deg;</td>
                 <td style="width:30%;background-color:#2C1E75;color:white;">Titre</td>
@@ -96,7 +90,7 @@ if (isset($_SESSION['id'])) {
                     $indice = $indice + 1;
                     if (($indice % 2) == 0) {
                         ?>
-                        <tr class="pair" onmousemove="javascript:changeColor(this);" onmouseout="colorDefault(this, 'pair')" bgcolor="#D2D2FF">
+                        <tr class="pair" onmousemove="javascript:changeColor(this);" onmouseout="colorDefault(this, 'pair')" style="background-color: #FCFCFC">
                             <td><?php echo $indice; ?></td>
                             <td><?php echo $donnees_messages['titre']; ?></td>
                             <td><?php echo $donnees_messages['acteur']; ?></td>

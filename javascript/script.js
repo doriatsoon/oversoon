@@ -66,7 +66,7 @@ page = {
 
             $("#popin").fadeOut(500, function() {
                 $("#popin").remove();
-            })
+            });
 
             //hide the content and show the progress bar
             $('#center').hide();
@@ -81,7 +81,7 @@ page = {
         });
     }
 
-}
+};
 
 popin = {
     init: function() {
@@ -145,7 +145,7 @@ popin = {
             return $(window).width();
         }
     }
-}
+};
 
 // Permet de changer la couleur des lignes du listing films
 function changeColor(ligne) {
@@ -154,7 +154,7 @@ function changeColor(ligne) {
 
 function colorDefault(ligne, etat) {
     if (etat === 'pair') {
-        ligne.style.background = '#D2D2FF';
+        ligne.style.background = '#FCFCFC';
     } else {
         ligne.style.background = 'transparent';
     }
