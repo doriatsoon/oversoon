@@ -6,14 +6,6 @@ include 'function.php';
 include 'tools/listeDeroulanteTool.php';
 include 'requetes/requeteFilms.php';
 
-//s'il y a un message pour l'utilisateur on l'affiche
-if (isset($_SESSION['messageUser'])) {
-    $messageUser = $_SESSION['messageUser'];
-    unset($_SESSION['messageUser']);
-} else {
-    $messageUser = "";
-}
-
 if (isset($_SESSION['indiceDebut'])) {
     $indiceDebut = $_SESSION['indiceDebut'];
 } else {
@@ -25,12 +17,12 @@ connexion();
 
 if (!isset($_SESSION['sql'])) {
 
-//on compte le nombre total de film pour créer les liens 1,2,3...
+    //on compte le nombre total de film pour créer les liens 1,2,3...
     $sql = mysql_query("SELECT * FROM film") or die("merde");
     $numRow = nbrFilm($sql);
     $nbrLink = ceil($numRow / 10);
 
-//requete pour l'affichage des films par 10
+    //requete pour l'affichage des films par 10
     $sql = $sql = "SELECT * FROM film order by titre asc limit " . $indiceDebut . ",10";
     $result = mysql_query($sql);
 } else {
@@ -58,66 +50,63 @@ if (isset($_SESSION['pageSelected'])) {
 }
 ?>
 
-<!-- Si l'utilisateur est pas connecté -->
-<?php if (!isset($_SESSION['login'])) { ?>
-    <div class="title">Vid&eacute;os</div>
-    <hr style="margin-left:15px;margin-right:10px;margin-bottom:50px;" size="1"/>
-    <?php include './forbiddenAcces.php'; ?>
-<?php } else {
-    ?>
-    <div class="title">Vidéos</div>
-    <hr style="margin-left:15px;margin-right:10px;" size="1" />
-    <div id="contentVideo">
-
+<div class="row">
+    <div class="large-12 columns">
+        <h3>Vidéos</h3>
+        <hr size="1" />
+    </div>
+</div>
+<div class="row">
+    <div class="large-3 columns">
         <form action="action/rechercheFilmsAction.php" method="post">
             <?php listeDeroulante(); ?>
-            <input type="submit" value="Chercher" name="chercher"/>
+            <input type="submit" value="Chercher" name="chercher" class="button expand"/>
         </form>
-
-        <table style="width:96%;border-collapse:collapse;margin-left:15px;margin-top:20px;font-size:14px">
-            <tr style="border-bottom:1px solid #E6E6E6;">
-                <td style="width:5%;">N&deg;</td>
-                <td style="width:30%;">Titre</td>
-                <td style="width:20%;">Acteur</td>
-                <td style="width:20%;">R&eacute;alisateur</td>
-                <td style="width:5%;">Fiche</td>
-            </tr>
-            <?php
-            $indice = $indiceDebut;
-            if (isset($result)) {
-                while ($donnees_messages = mysql_fetch_assoc($result)) {
-                    $indice = $indice + 1;
-                    if (($indice % 2) == 0) {
-                        ?>
-                        <tr class="pair" onmousemove="javascript:changeColor(this);" onmouseout="colorDefault(this, 'pair')" style="background-color: #E6E9ED">
-                        <?php } else { ?>
-                        <tr class="impair" onmousemove="changeColor(this)" onmouseout="colorDefault(this, 'impair')">
-                        <?php } ?>
-                            <td><?php echo $indice; ?></td>
-                            <td><?php echo $donnees_messages['titre'] ?></td>
-                            <td><?php echo $donnees_messages['acteur'] ?></td>
-                            <td><?php echo $donnees_messages['realisateur'] ?></td>
-                            <td><a href="#fichefilm&idFilm=<?php echo $donnees_messages['id']; ?>" rel="ajax"><img src="images/icons/ti-edit-paste-20x20.gif" alt="edit"/></a></td>
-                        </tr>
+    </div>
+    <div class="large-9 columns">
+        <div class="row"> 
+            <div class="large-12 columns">
+                <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
                     <?php
-                }
-            }
-        
-        ?>   
-    </table>
-    <?php
-    if (isset($numRow) && ($numRow > 10)) {
-        for ($k = 1; $k <= $nbrLink; $k++) {
-            if ($k == $pageSelected) {
-                echo "[<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a>] ";
-            } else {
-                echo "<a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a> ";
-            }
-        }
-    }
-    ?>                    
+                    if (isset($result)) {
+                        while ($donnees_messages = mysql_fetch_assoc($result)) {
+                            ?>
+                            <li>
+                                <ul class="pricing-table">
+                                    <li class="title"><a href="#fichefilm&idFilm=<?php echo $donnees_messages['id']; ?>" rel="ajax"><?php echo $donnees_messages['titre']; ?></a></li>
+                                    <li class="bullet-item"><img src="images/img_film/<?php echo  $donnees_messages['id']; ?>.jpg" style="width:120px;height:160px;" title="<?php echo trim(strtolower($row['titre'])); ?>"/></li>
+                                    <li class="description"><?php echo $donnees_messages['acteur']; ?></li>
+                                    <li class="bullet-item"><?php echo $donnees_messages['annee']; ?></li>
+                                </ul>
+                            </li>
+                            <?php
+                        }
+                    }
+                    ?>   
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row"> 
+            <div class="large-6 large-centered columns">
+                <ul class="pagination">
+                    <?php
+                    if (isset($numRow) && ($numRow > 10)) {
+                        for ($k = 1; $k <= $nbrLink; $k++) {
+                            if ($k == $pageSelected) {
+                                echo "<li class=\"current\"><a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a></li> ";
+                            } else {
+                                echo "<li><a href=\"action/changeIntervalAction.php?rang=" . $k . "\" class=\"lienPagination\">" . $k . "</a></li>";
+                            }
+                        }
+                    }
+                    ?>    
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <?php
-}
 deconnexion();
 ?>

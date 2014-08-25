@@ -29,16 +29,18 @@ $queryForum = mysql_query($sqlForum);
 $rowForum = mysql_fetch_assoc($queryForum);
 
 //on récupère la date de naissance: jour,mois,annee
-$explodeString = explode("/", $row['birthday']);
-$jour = $explodeString[0];
-$mois = $explodeString[1];
-$annee = $explodeString[2];
+if($row['birthday'] != null) {
+    $explodeString = explode("/", $row['birthday']);
+    $jour = $explodeString[0];
+    $mois = $explodeString[1];
+    $annee = $explodeString[2];
+}
 ?>
 
 <div class="title">Modifier votre profil</div>
 <hr style="margin-left:15px;margin-right:10px;" size="1"/>
 <div id="contentInscription">
-    <form action="action/modifierProfilAction.php" method="post" name="formulaire">
+    <form id="modifyProfilForm">
         <fieldset>
             <legend>Informations personnelles</legend>
             <p>
@@ -84,7 +86,7 @@ $annee = $explodeString[2];
             </p>
         </fieldset>
         <p style="text-align:right">
-            <input type="submit" name="submit" class="submit" value="Soumettre" />
+            <input type="button" name="submit" class="submit" id="submitModifyProfil" value="Soumettre" />
             <input type="reset" name="reset" class="reset"/>
         </p>
     </form>

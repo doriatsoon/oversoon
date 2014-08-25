@@ -1,1 +1,2 @@
-<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/app.css" />

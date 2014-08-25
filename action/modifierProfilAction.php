@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_name('admin');
 @session_start();
 include("../function.php");
@@ -22,7 +22,7 @@ $sqlUpdateForum = "update forum_membres set membre_signature = \"$signature\", m
 $query = mysql_query($sqlUpdateForum) or die ("Mise a jour impossible");
 
 deconnexion();
-$_SESSION['messageUser'] = "<p style=\"color:green;font-weight:bold;font-size:12px;\">Votre modification a bien &eacute;t&eacute;e prise en compte.</p>";
 
-header('location:../index.php?page=#updateprofile&id='.$id);
+
+echo "<p style=\"color:green;font-weight:bold;font-size:12px;\">Votre modification a bien &eacute;t&eacute;e prise en compte.</p>";
 ?>

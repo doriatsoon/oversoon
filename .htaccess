@@ -1,0 +1,11 @@
+<ifmodule mod_expires.c>
+ExpiresActive On
+ExpiresDefault A3600
+ExpiresByType image/png A864000
+ExpiresByType image/gif A864000
+ExpiresByType image/jpeg A864000
+ExpiresByType text/css A259200
+ExpiresByType image/x-icon A4320000
+ExpiresByType text/javascript A864000
+ExpiresByType application/x-javascript A864000
+</ifmodule>
