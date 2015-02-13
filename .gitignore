@@ -2,3 +2,6 @@
 /.sass-cache/*
 *.DS_Store
 /stylesheets/*
+/AngularJSPhoneCat/nbproject/private/
+/AngularJSApp/nbproject/private/
+/AngularJSPhoneCat2/nbproject/private/
