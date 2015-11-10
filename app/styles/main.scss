@@ -1,8 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
-@import "font-awesome-4.4.0/scss/font-awesome.scss";
 /* ======= Base ======= */
 body {
   font-family: 'Lato', arial, sans-serif;
@@ -174,10 +174,20 @@ a.dotted-link:hover {
   font-size: 14px;
 }
 /* About Section */
+.about .fa {
+  margin-right: 15px;
+  color: #ccd1d6;
+}
 /* Latest Section */
 .latest .item {
   margin-bottom: 30px;
 }
+
+.latest .fa {
+  margin-right: 15px;
+  color: #ccd1d6;
+}
+
 .latest .item .title {
   font-size: 18px;
   margin-top: 0;
@@ -449,6 +459,11 @@ a.dotted-link:hover {
 .blog .item:last-child {
   margin-bottom: 0;
 }
+
+ul {
+  list-style-type: none;
+}
+
 /* List section */
 .list ul li {
   margin-bottom: 10px;
