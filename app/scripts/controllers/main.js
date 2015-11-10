@@ -8,7 +8,19 @@
  * Controller of the mjolyApp
  */
 angular.module('mjolyApp')
-  .controller('MainCtrl', ['$scope', function($scope) {
+  .controller('MainCtrl', ['$scope', 'angular-storage.store', 'auth', function($scope, store, auth) {
+
+    $scope.login = function() {
+      auth.signin({}, function(profile, token) {
+        // Success callback
+        store.set('profile', profile);
+        store.set('token', token);
+        //$location.path('/');
+      }, function() {
+        // Error callback
+      });
+    };
+
     $scope.universities = [{
       'university': 'Institut Electronique de Paris',
       'diplome': 'Diplôme d\'ingénieur',

@@ -15,9 +15,16 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'auth0',
+    'angular-storage',
+    'angular-jwt'
   ])
-  .config(function($routeProvider) {
+  .config(function($routeProvider, authProvider) {
+    authProvider.init({
+      domain: 'YOUR_NAMESPACE',
+      clientID: 'YOUR_CLIENT_ID'
+    });
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
