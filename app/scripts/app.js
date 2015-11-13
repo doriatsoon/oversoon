@@ -11,6 +11,7 @@
 angular
   .module('mjolyApp', [
     'ngAnimate',
+    'ngAria',
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -20,11 +21,12 @@ angular
     'angular-storage',
     'angular-jwt'
   ])
-  .config(function($routeProvider, authProvider) {
-    authProvider.init({
-      domain: 'YOUR_NAMESPACE',
-      clientID: 'YOUR_CLIENT_ID'
-    });
+  .config(function($routeProvider, $httpProvider) {
+    // authProvider.init({
+    //   domain: 'free',
+    //   clientID: '77ib09vb6rlk8s'
+    // });
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

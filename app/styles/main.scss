@@ -1,4 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "font-awesome/scss/font-awesome.scss";
@@ -7,7 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #737B79;
+  background: #BFBFD2;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,7 +24,7 @@ h6 {
   color: #778492;
 }
 a {
-  color: #3aaa64;
+  color: #778492;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -57,8 +58,8 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #737B79;
-  border: 1px solid #737B79;
+  background: #BFBFD2;
+  border: 1px solid #BFBFD2;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
@@ -102,7 +103,8 @@ a.dotted-link:hover {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: #EEEEEE;
+  background: rgb(148, 148, 162);
+  
   //border-top: 10px solid #778492;
 }
 .header .btn {
@@ -121,7 +123,7 @@ a.dotted-link:hover {
   margin-top: 30px;
 }
 .header .profile-content .desc {
-  color: #778492;
+  color: #102133;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -172,6 +174,11 @@ a.dotted-link:hover {
 .section .content .more-link .fa {
   margin-right: 5px;
   font-size: 14px;
+  color:#778492;
+}
+.divider {
+  margin-bottom: 15px;
+  border: 1px #ccd1d6 solid;
 }
 /* About Section */
 .about .fa {
@@ -182,12 +189,10 @@ a.dotted-link:hover {
 .latest .item {
   margin-bottom: 30px;
 }
-
 .latest .fa {
   margin-right: 15px;
   color: #ccd1d6;
 }
-
 .latest .item .title {
   font-size: 18px;
   margin-top: 0;
@@ -248,7 +253,7 @@ a.dotted-link:hover {
   left: -8px;
   top: 18px;
   width: 158px;
-  padding: 10px 10px;
+  padding: 10px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
@@ -344,6 +349,7 @@ a.dotted-link:hover {
 .info li:last-child {
   margin-bottom: 0;
 }
+
 /* Skills Section */
 .skills .intro {
   margin-bottom: 30px;
@@ -373,7 +379,7 @@ a.dotted-link:hover {
 }
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #66cb8c;
+  background: #778492;
 }
 /* Testimonials section */
 .testimonials .item {
@@ -459,7 +465,6 @@ a.dotted-link:hover {
 .blog .item:last-child {
   margin-bottom: 0;
 }
-
 ul {
   list-style-type: none;
 }
