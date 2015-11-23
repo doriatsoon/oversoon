@@ -4,169 +4,138 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-header	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<header class="header">$/;"	function	line:2
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^  <div class="container">$/;"	function	line:3
-img	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^    <img class="profile-image img-responsive pull-left" src="images\/profile.png" alt="Marc Joly" \/>$/;"	function	line:4
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^    <div class="profile-content pull-left">$/;"	function	line:5
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <h1 class="name">Marc Joly<\/h1>$/;"	function	line:6
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <h2 class="desc">Technical leader & Agile enthusiast<\/h2>$/;"	function	line:7
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <ul class="social list-inline">$/;"	function	line:8
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <li><a href="https:\/\/twitter.com\/mjoly84" target="_blank"><i class="fa fa-twitter"><\/i><\/a><\/li>$/;"	function	line:9
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <li><a href="https:\/\/fr.linkedin.com\/in\/marc-joly-751b2b15" target="_blank"><i class="fa fa-linkedin"><\/i><\/a><\/li>$/;"	function	line:11
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <li><a href="http:\/\/oversoon.wordpress.com" target="_blank"><i class="fa fa-wordpress"><\/i><\/a><\/li>$/;"	function	line:13
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^    <a class="btn btn-cta-primary pull-right" href="mailto:doriatsoon@gmail.com"><i class="fa fa-paper-plane"><\/i> Contactez-moi<\/a>$/;"	function	line:16
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="container sections-wrapper">$/;"	function	line:21
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^  <div class="row">$/;"	function	line:22
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^    <div class="primary col-md-8 col-sm-12 col-xs-12">$/;"	function	line:23
-section	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <section class="about section">$/;"	function	line:24
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner ">$/;"	function	line:25
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">À propos de moi<\/h2>$/;"	function	line:26
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content">$/;"	function	line:27
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>Je suis un$/;"	function	line:28
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>développeur craftsman<\/strong> passionné par les technologies du web et par$/;"	function	line:29
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>l'agilité.<\/strong>$/;"	function	line:30
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>$/;"	function	line:32
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>J'ai acquis une forte maîtrise back-end en travaillant sur des frameworks tels que$/;"	function	line:35
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>JEE<\/strong> et$/;"	function	line:36
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Spring<\/strong> (SOAP, REST) tout en prônant des pratiques orientées qualité telles que l'XP, le Test Driven Development ou encore le Behaviour Driver Development.$/;"	function	line:37
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p> J'ai également travaillé côté front-end, aussi sur bien pour des sites webs que sur des applications mobiles, en manipulant des nouveaux frameworks, tels que$/;"	function	line:39
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>AngularJS 1<\/strong>,$/;"	function	line:40
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Zurb foundation<\/strong>,$/;"	function	line:41
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Bootstrap<\/strong> ou encore Apache cordova.$/;"	function	line:42
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>Fervent des outils d'automatisation des tâches, je me suis formé sur des solutions telles que Maven,   Grunt (et bower), Gulp me permettant ainsi de faire de l'intégration continue grâce à Jenkins.$/;"	function	line:44
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>$/;"	function	line:46
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>l'agilité<\/strong> (Scrum, Kanban, XP, Lean startup) m'a mené à la diffuser en portant des projets en mode agile.<\/p>$/;"	function	line:48
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>$/;"	function	line:49
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Développeur senior<\/strong>,$/;"	function	line:51
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Leader technique<\/strong> ou encore$/;"	function	line:52
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>Scrum Master<\/strong> avec une casquette de$/;"	function	line:53
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <strong>coach agile<\/strong>.$/;"	function	line:54
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>$/;"	function	line:56
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <ul class="list-unstyled">$/;"	function	line:59
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-circle"><\/i>$/;"	function	line:60
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <strong>Scrum Master avancé<\/strong> par Renaud Chevalier (Xebia)<\/li>$/;"	function	line:61
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-circle"><\/i>$/;"	function	line:62
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <strong>Kanban<\/strong> par Xebia<\/li>$/;"	function	line:63
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-circle"><\/i>$/;"	function	line:64
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <strong>Spring<\/strong> par Zenika<\/li>$/;"	function	line:65
-section	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <section class="latest section">$/;"	function	line:71
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner">$/;"	function	line:72
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">Mon portfolio<\/h2>$/;"	function	line:73
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content">$/;"	function	line:74
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item featured">$/;"	function	line:76
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <h3 class="title"><a href="http:\/\/www.mieuxvautprevenir.fr\/" target="_blank">Mieux vaut prévenir - Technical leader & Scrum Master<\/a><\/h3>$/;"	function	line:77
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <p class="summary text-justify">J'ai été Technical leader & Scrum Master d'une équipe de trois développeurs front. J'ai développé l'application Mieux vaut prévenir avec le framework AngularJS. J'étais responsable des développements et donc de la mise en place des best$/;"	function	line:78
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <div class="featured-image">$/;"	function	line:80
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <a href="http:\/\/www.mieuxvautprevenir.fr\/" target="_blank">$/;"	function	line:81
-img	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <img class="img-responsive project-image" src="images\/projects\/mvp.png" alt="Mieux vaut prévenir - Technical leader & Scrum Master" \/>$/;"	function	line:82
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <div class="ribbon">$/;"	function	line:84
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <div class="text">Nouveau<\/div>$/;"	function	line:85
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <div class="desc text-left">$/;"	function	line:89
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <p>$/;"	function	line:90
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <strong>Stack technique:<\/strong>$/;"	function	line:91
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <ul class="list-unstyled">$/;"	function	line:93
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <li><i class="fa fa-circle"><\/i>$/;"	function	line:94
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Front:<\/strong> HTML5, SASS, AngularJS, Bower, Grunt, Protractor, Apache cordova<\/li>$/;"	function	line:95
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <li><i class="fa fa-circle"><\/i>$/;"	function	line:96
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Autres:<\/strong> Jenkins, GIT, Jira , Confluence, Bitbucket (Pull requests)<\/li>$/;"	function	line:97
-hr	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <hr class="divider" \/>$/;"	function	line:101
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item row">$/;"	function	line:103
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <a class="col-md-4 col-sm-4 col-xs-12" href="http:\/\/www.galerieslafayette.com\/\/" target="_blank">$/;"	function	line:105
-img	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <img class="img-responsive project-image" src="images\/projects\/gl.png" alt="Galeries Lafayette - Java JEE Technical Leader" \/>$/;"	function	line:106
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <div class="desc col-md-8 col-sm-8 col-xs-12">$/;"	function	line:108
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <h3 class="title"><a>Galeries Lafayette - JEE Technical Leader<\/a><\/h3>$/;"	function	line:109
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <p class="text-justify">$/;"	function	line:110
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <p>$/;"	function	line:114
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <strong>Stack technique:<\/strong>$/;"	function	line:115
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <ul class="list-unstyled">$/;"	function	line:117
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <li><i class="fa fa-circle"><\/i>$/;"	function	line:118
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Back :<\/strong> Tomcat, Oracle, Hybris, Java7 JEE, REST, Spring 4 (MVC), Ant, Maven.<\/li>$/;"	function	line:119
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <li><i class="fa fa-circle"><\/i>$/;"	function	line:120
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Front :<\/strong> HTML5, SASS, Foundation, JQuery, Bower, Grunt.<\/li>$/;"	function	line:121
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <li><i class="fa fa-circle"><\/i>$/;"	function	line:122
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Autres :<\/strong> Jenkins, GIT, Jira, Confluence, Bitbucket.<\/li>$/;"	function	line:123
-hr	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <hr class="divider" \/>$/;"	function	line:127
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item row">$/;"	function	line:129
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <div class="desc col-md-8 col-sm-8 col-xs-12">$/;"	function	line:130
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <h3 class="title"><a href="http:\/\/www.priceminister.com\/" target="_blank">Rakuten - Priceminister : Full stack developper & Scrum Master<\/a><\/h3>$/;"	function	line:131
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <p class="summary text-justify">Au sein du pôle navigation, nous avions pour challenge de répondre à des problématiques modernes (SEO, MERCHANDIZING, USER EXPERIENCE) avec d'un côté des méthodes toutes aussi modernes (SCRUM, XP, KANBAN) et de l'autre, des technologies$/;"	function	line:132
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <div class="desc text-left">$/;"	function	line:134
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <p>$/;"	function	line:135
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <strong>Stack technique:<\/strong>$/;"	function	line:136
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <ul class="list-unstyled">$/;"	function	line:138
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <li><i class="fa fa-circle"><\/i>$/;"	function	line:139
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                      <strong>Back:<\/strong> JEE 6, Oracle, SQL, MICROSOFT FAST<\/li>$/;"	function	line:140
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <li><i class="fa fa-circle"><\/i>$/;"	function	line:141
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                      <strong>Front:<\/strong> HTML, CSS, JQUERY<\/li>$/;"	function	line:142
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                    <li><i class="fa fa-circle"><\/i>$/;"	function	line:143
-strong	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                      <strong>Autres:<\/strong> Jenkins, BAZAAR, Jira<\/li>$/;"	function	line:144
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <a class="col-md-4 col-sm-4 col-xs-12" href="http:\/\/www.priceminister.fr\/" target="_blank">$/;"	function	line:148
-img	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <img class="img-responsive project-image" src="images\/projects\/pm.png" alt="Priceminister - Full stack developper & Scrum master" \/>$/;"	function	line:149
-section	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <section class="projects section">$/;"	function	line:155
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner">$/;"	function	line:156
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">Publications<\/h2>$/;"	function	line:157
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content text-justify">$/;"	function	line:158
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item" ng-repeat="publication in publications">$/;"	function	line:159
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <h3 class="title">{{publication.title}}<\/h3>$/;"	function	line:160
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <p class="summary">{{publication.summary}}<\/p>$/;"	function	line:161
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <p><a class="more-link" target="_blank" href="{{publication.link}}"><i class="fa fa-external-link"><\/i> Lire plus<\/a><\/p>$/;"	function	line:162
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <a class="btn btn-cta-secondary" target="_blank" href="https:\/\/oversoon.wordpress.com">En voir plus sur mon blog <i class="fa fa-chevron-right"><\/i><\/a>$/;"	function	line:164
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="section-inner">$/;"	function	line:171
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <h2 class="heading">Parcours professionnel<\/h2>$/;"	function	line:172
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="content" ng-repeat="experience in experiences">$/;"	function	line:173
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item">$/;"	function	line:174
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <h3 class="title">{{experience.title}} - <span class="place"><a href="#">{{experience.place}}<\/a><\/span> <span class="year">({{experience.years}})<\/span><\/h3>$/;"	function	line:175
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p>{{experience.description}}<\/p>$/;"	function	line:176
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^    <div class="secondary col-md-4 col-sm-12 col-xs-12">$/;"	function	line:183
-aside	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <aside class="info aside section">$/;"	function	line:184
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner">$/;"	function	line:185
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">Informations<\/h2>$/;"	function	line:186
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content">$/;"	function	line:187
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <ul class="list-unstyled">$/;"	function	line:188
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-map-marker"><\/i>$/;"	function	line:189
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <span class="sr-only">Lieu:<\/span>Paris, France<\/li>$/;"	function	line:190
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-envelope-o"><\/i>$/;"	function	line:191
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <span class="sr-only">E-mail:<\/span><a href="mailto:doriatsoon@gmail.com">doriatsoon@gmail.com<\/a><\/li>$/;"	function	line:192
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <li><i class="fa fa-link"><\/i>$/;"	function	line:193
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <span class="sr-only">Blog:<\/span><a href="http:\/\/oversoon.wordpress.com" target="_blank">oversoon.wordpress.com<\/a><\/li>$/;"	function	line:194
-aside	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <aside class="education aside section">$/;"	function	line:200
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner">$/;"	function	line:201
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">Formations<\/h2>$/;"	function	line:202
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content" ng-repeat="university in universities">$/;"	function	line:203
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="item">$/;"	function	line:204
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <h3 class="title"><i class="fa fa-graduation-cap"><\/i> {{university.diplome}}<\/h3>$/;"	function	line:205
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <h4 class="university">{{university.university}}$/;"	function	line:206
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <span class="year">({{university.years}})<\/span>$/;"	function	line:207
-aside	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^      <aside class="skills aside section">$/;"	function	line:214
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^        <div class="section-inner">$/;"	function	line:215
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <h2 class="heading">Compétences<\/h2>$/;"	function	line:216
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^          <div class="content">$/;"	function	line:217
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <p class="intro">$/;"	function	line:218
-a	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <a class="more-link" href="https:\/\/fr.linkedin.com\/in\/marc-joly-751b2b15" target="_blank">$/;"	function	line:219
-i	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <i class="fa fa-external-link"><\/i> En voir plus sur LinkedIn$/;"	function	line:220
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^            <div class="skillset repeat-animation" ng-repeat="skill in skills">$/;"	function	line:223
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^              <div class="item">$/;"	function	line:224
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <h3 class="level-title">{{skill.title}}$/;"	function	line:225
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="{{skill.more}}">{{skill.label}}<\/span>$/;"	function	line:226
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                <div class="level-bar">$/;"	function	line:228
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^                  <div class="level-bar-inner" data-level="{{skill.level}}"><\/div>$/;"	function	line:229
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="section-inner">$/;"	function	line:238
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<h2 class="heading">Recommandations<\/h2>$/;"	function	line:239
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="content">$/;"	function	line:240
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="item">$/;"	function	line:241
-blockquote	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<blockquote class="quote">                                  $/;"	function	line:242
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p><i class="fa fa-quote-left"><\/i>Romain possède une expertise sans faille des technologies web en environnement agile. $/;"	function	line:243
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p class="source"><span class="name">Jean-Baptiste Marcovici<\/span><br \/><span class="title">Responsable R&D<\/span><\/p>                                                             $/;"	function	line:247
-blockquote	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<blockquote class="quote">                                  $/;"	function	line:250
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p><i class="fa fa-quote-left"><\/i>Romain a un profil très intéressant de par ses connaissances à la fois techniques et à la fois méthodologiques. Il maîtrise aussi bien le langage java, ainsi que les framework les plus connus (Spring, Hibernate et d'autres) que les méthodologies agiles (SCRUM, KANBAN, LEAN). $/;"	function	line:251
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p class="source"><span class="name">Marc Joly<\/span><br \/><span class="title">Scrum Master<\/span><\/p>                                                              -->$/;"	function	line:254
-blockquote	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<blockquote class="quote">                                  $/;"	function	line:257
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p><i class="fa fa-quote-left"><\/i>Romain a apporté son expertise pointue sur les technologies Java, et a permis à l'équipe de faire les meilleurs choix de technologies (architecture, frameworks, composants techniques...), d'améliorer la qualité du code grâce à ses connaissances agiles (SCRUM, extreme programming, TDD...) et en fin de compte par sa motivation et ses qualités humaines à faire progresser l'équipe dans son ensemble. En effet, plus qu'un expert technique, Romain est un leader charismatique, un véritable coach, qui sait guider les autres, faire les meilleurs choix.   <\/p>$/;"	function	line:258
-p	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<p class="source"><span class="name">Benjamin Lefevre<\/span><br \/><span class="title">Software engineer, Software Architect<\/span><\/p>                                                              -->$/;"	function	line:260
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="section-inner">$/;"	function	line:273
-h	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<h2 class="heading">Langues<\/h2>$/;"	function	line:274
-div	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<div class="content">$/;"	function	line:275
-ul	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<ul class="list-unstyled" ng-repeat="language in languages">$/;"	function	line:276
-li	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<li class="item">$/;"	function	line:277
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<span class="title"><strong>{{language.language}}:<\/strong><\/span>$/;"	function	line:278
-span	C:\Users\MJOLY\Desktop\oversoon\app\views\main.html	/^<span class="level">{{language.level}} <br class="visible-xs"\/><span  ng-repeat="a in getNumber(language.stars) track by $index"><i class="fa fa-star"><\/i><\/span>  <\/span>$/;"	function	line:279
+icon-font-path	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^$icon-font-path: "..\/bower_components\/bootstrap-sass-official\/assets\/fonts\/bootstrap\/";$/;"	function	line:1
+body	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^body {$/;"	function	line:8
+h1	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h1,$/;"	function	line:16
+h2	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h2,$/;"	function	line:17
+h3	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h3,$/;"	function	line:18
+h4	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h4,$/;"	function	line:19
+h5	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h5,$/;"	function	line:20
+h6	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^h6 {$/;"	function	line:21
+a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a {$/;"	function	line:26
+a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a:hover {$/;"	function	line:33
+a:focus	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a:focus {$/;"	function	line:38
+.btn	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn,$/;"	function	line:41
+a.btn	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn {$/;"	function	line:42
+.btn .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn .fa,$/;"	function	line:51
+a.btn .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn .fa {$/;"	function	line:52
+.btn:focus	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn:focus,$/;"	function	line:55
+a.btn:focus	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn:focus {$/;"	function	line:56
+a.btn-cta-primary	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn-cta-primary,$/;"	function	line:59
+.btn-cta-primary	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn-cta-primary {$/;"	function	line:60
+a.btn-cta-primary:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn-cta-primary:hover,$/;"	function	line:67
+.btn-cta-primary:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn-cta-primary:hover {$/;"	function	line:68
+a.btn-cta-secondary	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn-cta-secondary,$/;"	function	line:73
+.btn-cta-secondary	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn-cta-secondary {$/;"	function	line:74
+a.btn-cta-secondary:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.btn-cta-secondary:hover,$/;"	function	line:81
+.btn-cta-secondary:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.btn-cta-secondary:hover {$/;"	function	line:82
+.text-highlight	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.text-highlight {$/;"	function	line:87
+.label-theme	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.label-theme {$/;"	function	line:90
+a.dotted-link	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.dotted-link {$/;"	function	line:94
+a.dotted-link:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^a.dotted-link:hover {$/;"	function	line:98
+.header	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header {$/;"	function	line:104
+.header .btn	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .btn {$/;"	function	line:108
+.header .profile-image	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-image {$/;"	function	line:112
+.header .profile-content .name	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-content .name {$/;"	function	line:117
+.header .profile-content .desc	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-content .desc {$/;"	function	line:123
+.header .profile-content .social a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-content .social a {$/;"	function	line:131
+.header .profile-content .social a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-content .social a:hover {$/;"	function	line:147
+.header .profile-content .social a .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.header .profile-content .social a .fa {$/;"	function	line:150
+.sections-wrapper	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.sections-wrapper {$/;"	function	line:155
+.section	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.section {$/;"	function	line:159
+.section .section-inner	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.section .section-inner {$/;"	function	line:162
+.section .heading	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.section .heading {$/;"	function	line:166
+.section .content .more-link .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.section .content .more-link .fa {$/;"	function	line:172
+.divider	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.divider {$/;"	function	line:177
+.about .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.about .fa {$/;"	function	line:182
+.latest .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item {$/;"	function	line:187
+.latest .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .fa {$/;"	function	line:190
+.latest .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item .title {$/;"	function	line:194
+.latest .item .title .label	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item .title .label {$/;"	function	line:198
+.latest .item .title a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item .title a {$/;"	function	line:202
+.latest .item .title a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item .title a:hover {$/;"	function	line:205
+.latest .item .project-image:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .item .project-image:hover {$/;"	function	line:208
+.latest .divider	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .divider {$/;"	function	line:213
+.latest .featured	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured {$/;"	function	line:216
+.latest .featured .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured .title {$/;"	function	line:219
+.latest .featured .summary	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured .summary {$/;"	function	line:223
+.latest .featured img	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured img {$/;"	function	line:227
+.latest .featured .desc	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured .desc {$/;"	function	line:230
+.latest .featured-image	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image {$/;"	function	line:233
+.latest .featured-image .text	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .text {$/;"	function	line:236
+.latest .featured-image .ribbon	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon {$/;"	function	line:240
+.latest .featured-image .ribbon .text	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon .text {$/;"	function	line:248
+.latest .featured-image .ribbon .text:before	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon .text:before,$/;"	function	line:266
+.latest .featured-image .ribbon .text:after	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon .text:after {$/;"	function	line:267
+.latest .featured-image .ribbon .text:before	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon .text:before {$/;"	function	line:275
+.latest .featured-image .ribbon .text:after	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.latest .featured-image .ribbon .text:after {$/;"	function	line:278
+.projects .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.projects .item {$/;"	function	line:282
+.projects .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.projects .item .title {$/;"	function	line:285
+.projects .item .title a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.projects .item .title a {$/;"	function	line:291
+.projects .item .title a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.projects .item .title a:hover {$/;"	function	line:294
+.experience .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item {$/;"	function	line:298
+.experience .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item .title {$/;"	function	line:301
+.experience .item .title .place	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item .title .place {$/;"	function	line:307
+.experience .item .title .place a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item .title .place a {$/;"	function	line:311
+.experience .item .title .place a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item .title .place a:hover {$/;"	function	line:314
+.experience .item .title .year	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.experience .item .title .year {$/;"	function	line:317
+.ghfeed	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.ghfeed {$/;"	function	line:322
+.ghfeed	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.ghfeed,$/;"	function	line:325
+.ghfeed *	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.ghfeed *,$/;"	function	line:326
+.ghfeed *:before	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.ghfeed *:before,$/;"	function	line:327
+.ghfeed *:after	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.ghfeed *:after {$/;"	function	line:328
+.info .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.info .fa {$/;"	function	line:334
+.info .fa.fa-envelope-o	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.info .fa.fa-envelope-o {$/;"	function	line:338
+.info ul	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.info ul {$/;"	function	line:341
+.info li	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.info li {$/;"	function	line:344
+.info li:last-child	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.info li:last-child {$/;"	function	line:347
+.skills .intro	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .intro {$/;"	function	line:352
+.skills .skillset .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .skillset .item {$/;"	function	line:355
+.skills .skillset .level-title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .skillset .level-title {$/;"	function	line:358
+.skills .skillset .level-title .level-label	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .skillset .level-title .level-label {$/;"	function	line:364
+.skills .skillset .level-bar	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .skillset .level-bar {$/;"	function	line:374
+.skills .skillset .level-bar-inner	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.skills .skillset .level-bar-inner {$/;"	function	line:378
+.testimonials .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item {$/;"	function	line:383
+.testimonials .item:last-child	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item:last-child {$/;"	function	line:386
+.testimonials .item .quote	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item .quote {$/;"	function	line:389
+.testimonials .item .quote .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item .quote .fa {$/;"	function	line:395
+.testimonials .item .source	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item .source {$/;"	function	line:399
+.testimonials .item .source .name	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item .source .name {$/;"	function	line:404
+.testimonials .item .source .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.testimonials .item .source .title {$/;"	function	line:408
+.education .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.education .item {$/;"	function	line:412
+.education .item:last-child	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.education .item:last-child {$/;"	function	line:415
+.education .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.education .item .title {$/;"	function	line:418
+.education .item .university	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.education .item .university {$/;"	function	line:422
+.education .item .university .year	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.education .item .university .year {$/;"	function	line:429
+.languages .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.languages .item {$/;"	function	line:434
+.languages .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.languages .item .title {$/;"	function	line:437
+.languages .item .level	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.languages .item .level {$/;"	function	line:440
+.languages .item:last-child	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.languages .item:last-child {$/;"	function	line:443
+.languages .item .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.languages .item .fa {$/;"	function	line:446
+.blog .item	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.blog .item {$/;"	function	line:450
+.blog .item .title	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.blog .item .title {$/;"	function	line:453
+.blog .item .title a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.blog .item .title a {$/;"	function	line:457
+.blog .item .title a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.blog .item .title a:hover {$/;"	function	line:460
+.blog .item:last-child	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.blog .item:last-child {$/;"	function	line:463
+ul	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^ul {$/;"	function	line:466
+.list ul li	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.list ul li {$/;"	function	line:471
+.list ul li .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.list ul li .fa {$/;"	function	line:474
+.list ul li a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.list ul li a {$/;"	function	line:477
+.list ul li a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.list ul li a:hover {$/;"	function	line:480
+.credits ul li	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.credits ul li {$/;"	function	line:484
+.credits ul li .fa	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.credits ul li .fa {$/;"	function	line:487
+.credits ul li a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.credits ul li a {$/;"	function	line:490
+.credits ul li a:hover	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.credits ul li a:hover {$/;"	function	line:493
+.credits .btn	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.credits .btn {$/;"	function	line:496
+.footer	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.footer {$/;"	function	line:500
+.footer .copyright	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.footer .copyright {$/;"	function	line:505
+.footer a	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.footer a {$/;"	function	line:510
+.footer .fa-heart	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^.footer .fa-heart {$/;"	function	line:513
+@media (max-width: 767px)	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^@media (max-width: 767px) {$/;"	function	line:517
+.header	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .header {$/;"	function	line:518
+.header .profile-image	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .header .profile-image {$/;"	function	line:521
+.header .profile-content	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .header .profile-content {$/;"	function	line:525
+.header .btn	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .header .btn {$/;"	function	line:529
+.project-image	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .project-image {$/;"	function	line:533
+@media (min-width: 1400px)	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^@media (min-width: 1400px) {$/;"	function	line:541
+.container	C:\Users\MJOLY\Desktop\oversoon\app\styles\main.scss	/^  .container {$/;"	function	line:542

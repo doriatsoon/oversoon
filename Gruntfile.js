@@ -408,7 +408,8 @@ module.exports = function(grunt) {
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
-        files: [{
+        files: [
+		{
           expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>',
@@ -417,24 +418,38 @@ module.exports = function(grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+			'*/fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
-          expand: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-          dest: '<%= yeoman.dist %>'
-        }, {
-          expand: true,
-          cwd: '.',
-          src: 'bower_components/font-awesome/fonts/*',
-          dest: '<%= yeoman.dist %>'
-        }]
+        },{
+			//for bootstrap fonts
+				expand: true,
+				dot: true,
+				cwd: 'bower_components/bootstrap/dist',
+				src: ['fonts/*.*'],
+				dest: '<%= yeoman.dist %>'
+			}, {
+
+			//for font-awesome
+				expand: true,
+				dot: true,
+				cwd: 'bower_components/font-awesome',
+				src: ['fonts/*.*'],
+				dest: '<%= yeoman.dist %>/'
+			}, {
+
+			//for devicon
+				expand: true,
+				dot: true,
+				cwd: 'bower_components/devicon',
+				src: ['fonts/*.*'],
+				dest: '<%= yeoman.dist %>/styles/'
+			}]
       },
       styles: {
         expand: true,

@@ -8,7 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #BFBFD2;
+  background: #86828F;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,12 +100,15 @@ a.dotted-link:hover {
   color: #49515a;
 }
 
+
+i {
+  font-size : xx-large;
+}
+
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: rgb(148, 148, 162);
-  
-  //border-top: 10px solid #778492;
+  background: #EFEFF1;
 }
 .header .btn {
   margin-top: 60px;
